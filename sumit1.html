@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNMI</title>
+    <link rel="icon" href="https://sa1uae8t4nyafo9etfscsg-on.drv.tw/MY%20WORK/LAAP.zip%20(Unzipped%20Files)/LAAP/laap.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('https://i.pinimg.com/originals/bf/82/f6/bf82f6956a32819af48c2572243e8286.jpg');
+            background-repeat: no-repeat;
+            
+            
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid black;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .sub [type="submit"] {
+            margin: auto;
+            display: block;
+            width: 80%;
+            height: 40px;
+            background-color: #6fe66f;
+            color: black;
+            border-radius: 5px;
+            
+        }
+
+
+
+        .container {
+            padding: 0px 16px 16px 16px;
+            max-width: 500px;
+            margin: 30px 0px 0px 500px;
+            background: rgb(219, 203, 203);
+            border-radius: 10px;
+            box-shadow: 0px 0px 35px 10px #a19cc6;
+            
+        }
+
+        .imgcontainer {
+            display: flex;
+            /* align-content: center;
+
+            text-align: center;
+            margin: 24px 0 12px 0;
+            margin: ; */
+        }
+        h3{
+            display: flex;
+            justify-content: center;
+        }
+
+        img.avatar {
+            display: inline-block;
+
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .avatar {
+            width: auto;
+            height: 100%;
+            margin-left: -50px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 13px;
+            background-color: #2d3d8ac9;
+            color: #fff;
+            margin-top: 3px;
+            border-radius: 32px;
+        }
+
+        .nav-links a {
+            color: #fff;
+        }
+
+        .logo {
+            font-size: 32px;
+        }
+
+        
+        .menu {
+            display: flex;
+            gap: 1em;
+            font-size: 18px;
+        }
+
+        .menu li:hover {
+            
+            background-color: #4c9e9e;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        .menu li {
+            padding: 5px 14px;
+        }
+
+        
+        .services {
+            position: relative;
+        }
+
+        .dropdown {
+            background-color: #2d3d8ac9;
+            padding: 1em 0;
+            position: absolute;
+            
+            display: none;
+            border-radius: 8px;
+            top: 30px;
+        }
+
+        .dropdown li+li {
+            margin-top: 10px;
+        }
+
+        .dropdown li {
+            padding: 0.5em 1em;
+            width: 8em;
+            text-align: center;
+        }
+
+        .dropdown li:hover {
+            background-color: #4c9e9e;
+        }
+
+        .services:hover .dropdown {
+            display: block;
+        }
+
+        input[type=checkbox] {
+            display: none;
+        }
+
+        
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            user-select: none;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                position: absolute;
+                background-color: #2d3d8ac9;
+                right: 0;
+                left: 0;
+                text-align: center;
+                padding: 16px 0;
+            }
+
+            .menu li:hover {
+                display: inline-block;
+                background-color: #4c9e9e;
+                transition: 0.3s ease;
+            }
+
+            .menu li+li {
+                margin-top: 12px;
+            }
+
+            input[type=checkbox]:checked~.menu {
+                display: block;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .dropdown {
+                left: 50%;
+                top: 30px;
+                transform: translateX(35%);
+            }
+
+            .dropdown li:hover {
+                background-color: #4c9e9e;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">LAAP</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="services">
+                    <a href="#">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="try4.html">Registration</a></li>
+                        <li><a href="try5.html">View Records</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+
+            </div>
+        </ul>
+    </nav>
+    
+    <form action="backend.php" method="post">
+        <div class="container">
+            <div class="imgcontainer">
+                <img src="https://sa1uae8t4nyafo9etfscsg-on.drv.tw/MY%20WORK/LAAP.zip%20(Unzipped%20Files)/LAAP/laap.png"
+                    alt="Avatar" class="avatar">
+                </div>
+                <h3>Registration Form</h3>
+
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="Roll No" name="roll">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="text" placeholder="Mobile No.." name="mob" required>
+            <input type="text" placeholder="Designation" name="designation">
+            <input type="text" placeholder="Advice.." name="advice">
+            <div class="sub">
+                <button type="submit">
+                    <a href="sumit2.html" >Submit </a>
+                </button>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
